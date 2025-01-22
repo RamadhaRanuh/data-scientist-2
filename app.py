@@ -22,7 +22,7 @@ def predict(data):
     return final_result
 
 
-model = joblib.load('/content/sample_data/lr_model.joblib')
+model = joblib.load('model.joblib')
 feature = ['Curricular_units_2nd_sem_approved', 'Curricular_units_2nd_sem_grade', 'Curricular_units_1st_sem_approved', 'Curricular_units_1st_sem_grade', 'Tuition_fees_up_to_date', 'Scholarship_holder', 'Curricular_units_2nd_sem_enrolled', 'Curricular_units_1st_sem_enrolled', 'Admission_grade', 'Displaced', 'Previous_qualification_grade', 'Application_mode', 'Gender', 'Debtor', 'Age_at_enrollment']
 col1, col2 = st.columns([6, 1])
 with col1:

@@ -233,9 +233,46 @@ Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Se
 ```
 
 ## Conclusion
-Jelaskan konklusi dari proyek yang dikerjakan.
+Proyek ini bertujuan untuk membantu PT Jaya Jaya Institute mengidentifikasi faktor-faktor yang menyebabkan siswa melakukan dropout dan memberikan rekomendasi berbasis data untuk mengurangi angka tersebut. Berdasarkan analisis data pada dashboard:
+
+Angka Dropout Tinggi (23%)
+Hampir seperempat dari total siswa mengalami dropout, yang menjadi tantangan utama bagi institusi.
+
+Faktor-Faktor Risiko Dropout:
+Kinerja akademik yang rendah (rata-rata satuan kurikulum hanya 5.9 pada semester kedua).
+Pembayaran biaya kuliah yang tertunda (hanya 0.6 juta dibandingkan 1.5 juta pada siswa yang lulus).
+Persentase siswa yang memiliki utang lebih tinggi pada kelompok dropout (25%).
+Kurangnya dukungan beasiswa pada siswa dropout (19.4% memiliki beasiswa dibandingkan dengan 61.8% pada siswa lulus).
+Siswa yang lebih tua saat mendaftar lebih rentan terhadap dropout (22.37 tahun rata-rata usia pendaftaran dibandingkan 21.78 tahun pada siswa lulus).
+
+Kelebihan Institusi:
+Tingkat kelulusan yang tinggi (sekitar 43% dari total siswa berhasil lulus).
+Dukungan beasiswa terbukti berdampak positif terhadap keberhasilan akademik.
 
 ### Rekomendasi Action Items
-Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
-- action item 1
-- action item 2
+Untuk menyelesaikan permasalahan dropout dan meningkatkan keberhasilan siswa, berikut adalah beberapa rekomendasi berbasis data:
+1. Program Intervensi Dini untuk Siswa Risiko Tinggi
+
+Identifikasi siswa dengan kinerja akademik rendah (satuan kurikulum di bawah rata-rata).
+Berikan konseling akademik dan program tutoring untuk mendukung siswa yang struggling.
+Pastikan siswa semester awal memiliki jadwal belajar yang terorganisasi dengan baik untuk meningkatkan capaian akademik.
+
+2. Program Bantuan Keuangan dan Beasiswa
+
+Tingkatkan jumlah siswa yang menerima beasiswa, terutama untuk siswa dari keluarga kurang mampu atau yang menunjukkan potensi risiko dropout.
+Tawarkan skema pembayaran fleksibel untuk meringankan beban siswa yang memiliki keterlambatan pembayaran.
+
+3. Monitoring dan Evaluasi Siswa Berisiko Tinggi
+
+Bangun sistem monitoring berbasis data untuk mendeteksi siswa yang menunjukkan potensi dropout (usia lebih tua saat mendaftar, terlambat membayar, atau memiliki utang).
+Adakan sesi konsultasi reguler dengan wali akademik untuk memantau perkembangan siswa.
+
+4. Strategi Pendaftaran dan Seleksi Awal
+
+Optimalkan proses pendaftaran untuk menarik siswa yang lebih muda (usia awal 20-an) dan memiliki potensi akademik tinggi.
+Berikan edukasi awal tentang pentingnya menyelesaikan pendidikan secara tuntas, termasuk rencana jangka panjang setelah lulus.
+
+5. Sistem Gamifikasi dan Reward untuk Meningkatkan Keterlibatan
+
+Terapkan sistem penghargaan bagi siswa dengan capaian akademik baik atau ketepatan pembayaran biaya kuliah.
+Gunakan dashboard untuk memberikan feedback transparan kepada siswa tentang performa akademik mereka secara berkala.
