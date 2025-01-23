@@ -306,14 +306,14 @@ streamlit==1.41.1
 - Raw link: https://data-scientist-2-bjrkcolvbj9ykwuqghyce8.streamlit.app/
 
 
-- Prediksi data siswa yang graduated
+- Prediksi data siswa yang Graduated:
 
 ![Screenshot 2025-01-22 234019](https://github.com/user-attachments/assets/4baf8305-7c07-4b4a-ac13-2c9f84da5693)
 
 
-- Prediksi data siswa yang dropout
+- Prediksi data siswa yang Dropout:
 
-![Screenshot 2025-01-22 233336](https://github.com/user-attachments/assets/8b7c2983-b149-423c-bc79-584503c800e8)
+![Screenshot 2025-01-22 234158](https://github.com/user-attachments/assets/a6975092-413f-452d-aac3-046d294ed9c0)
 
 
 ## Conclusion
