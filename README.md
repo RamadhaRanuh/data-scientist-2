@@ -85,7 +85,7 @@ try:
     conn = psycopg2.connect(
         host="aws-0-ap-southeast-1.pooler.supabase.com",
         database="postgres",
-        user="postgres.fvqiswwruzdsyzacpohl",
+        user="postgres.hdpjyjyaeyxjddqdxged",
         password="password"
     )
     print("Connection successful!")
@@ -99,7 +99,7 @@ except Exception as e:
 ```python
 from sqlalchemy import create_engine
 
-URL = "postgresql://postgres.fvqiswwruzdsyzacpohl:[password]@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres"
+URL = "postgresql://postgres.hdpjyjyaeyxjddqdxged:[YOUR-PASSWORD]@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres"
 
 engine = create_engine(URL)
 df.to_sql('orders', engine)
@@ -228,9 +228,43 @@ Dashboard ini memberikan wawasan yang komprehensif bagi manajemen PT Jaya Jaya I
 ## Menjalankan Sistem Machine Learning
 Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Selain itu, sertakan juga link untuk mengakses prototype tersebut.
 
+
+### Coba run di local streamlit environment
+1. joblib.dump(model, "sample_data/lr_model.joblib")
+2. !pip install streamlit -q
+3. !wget -q -O - ipv4.icanhazip.com
+4. ! streamlit run app.py & npx localtunnel --port 8501
+
+### Run di streamlit community cloud
+1. git add app.py dan requirements.txt menggunakan git ke 
+
+dependencies:
+```txt
+joblib==1.4.2
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.6.0
+streamlit==1.41.1
 ```
 
+```Command
+git add app.py requirements.txt
+git commit -m "push the application"
+git remote add origin https://github.com/RamadhaRanuh/data-scientist-2
+git push origin master
 ```
+
+2. Buka Streamlit Community Cloud ke dalam website
+3. Login Streamlit Community Cloud menggunakan github
+4. Setelah masuk streamlit, klik tombol "Create App"
+5. Pilih "Deploy a public app from github"
+6. Isi data "Deploy an app" dengan sesuai
+7. Streamlit akan build dependencies sesuai dengan requirements.txt dan app.py, dan jika berhasil akan memberikan link deployment
+
+Link: https://data-scientist-2-bjrkcolvbj9ykwuqghyce8.streamlit.app/
+
+
+
 
 ## Conclusion
 Proyek ini bertujuan untuk membantu PT Jaya Jaya Institute mengidentifikasi faktor-faktor yang menyebabkan siswa melakukan dropout dan memberikan rekomendasi berbasis data untuk mengurangi angka tersebut. Berdasarkan analisis data pada dashboard:
