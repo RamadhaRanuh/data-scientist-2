@@ -160,10 +160,10 @@ Dari **business dashboard** yang telah dibuat di atas, berikut adalah penjelasan
 
 ### **4. Count for Each Status**  
 - **Distribusi Status Siswa:**  
-  - Dropout: **1,000 siswa**.  
-  - Enrolled (masih aktif): **1,500 siswa**.  
-  - Graduate (lulus): **1,924 siswa**.  
-  - Dropout mencapai hampir **23% dari total siswa**, yang menjadi perhatian utama institusi ini.  
+  - Dropout: **> 1,400 siswa**.  
+  - Enrolled (masih aktif): **< 1,000 siswa**.  
+  - Graduate (lulus): **> 2,000 siswa**.  
+  - Dropout mencapai lebih dari **30% dari total siswa**, yang menjadi perhatian utama institusi ini.  
   - Graduate mendominasi, menunjukkan keberhasilan akademik, namun angka dropout tetap tinggi.
 
 ---
@@ -226,26 +226,37 @@ Dari **business dashboard** yang telah dibuat di atas, berikut adalah penjelasan
 Dashboard ini memberikan wawasan yang komprehensif bagi manajemen PT Jaya Jaya Institute untuk menyusun strategi intervensi guna mengurangi angka dropout dan meningkatkan efisiensi akademik.
 
 ## Menjalankan Sistem Machine Learning
-Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Selain itu, sertakan juga link untuk mengakses prototype tersebut.
 
+### **Langkah-Langkah Deployment Sistem Machine Learning Menggunakan Streamlit Community Cloud**
 
-### Coba run di local streamlit environment
-1. joblib.dump(model, "sample_data/lr_model.joblib")
-2. !pip install streamlit -q
-3. !wget -q -O - ipv4.icanhazip.com
-4. ! streamlit run app.py & npx localtunnel --port 8501
+#### Menjalankan Sistem di Environment Lokal Streamlit
+1. Menyimpan model Logistic Regression yang telah dilatih
 
-### Run di streamlit community cloud
-1. git add app.py dan requirements.txt menggunakan git ke 
-
-dependencies:
-```txt
-joblib==1.4.2
-numpy==1.26.4
-pandas==2.2.2
-scikit-learn==1.6.0
-streamlit==1.41.1
+```python
+joblib.dump(model, "sample_data/lr_model.joblib")
 ```
+2. Instalasi Streamlit ke dalam environment
+
+```python
+!pip install streamlit -q
+```
+
+3. Memdapatkan alamat IP lokal
+
+```python
+!wget -q -O - ipv4.icanhazip.com
+```
+
+4. Menjalankan aplikasi streamlit di lokal
+
+```python
+! streamlit run app.py & npx localtunnel --port 8501
+```
+
+### Melakukan Deployment di Streamlit Community Cloud
+1. Persiapan File dan Repository GitHub
+
+- Pastikan file app.py (kode aplikasi) dan requirements.txt (dependensi) telah dibuat. Tambahkan file ini ke repository menggunakan Git:
 
 ```Command
 git add app.py requirements.txt
@@ -254,16 +265,31 @@ git remote add origin https://github.com/RamadhaRanuh/data-scientist-2
 git push origin master
 ```
 
-2. Buka Streamlit Community Cloud ke dalam website
-3. Login Streamlit Community Cloud menggunakan github
-4. Setelah masuk streamlit, klik tombol "Create App"
-5. Pilih "Deploy a public app from github"
-6. Isi data "Deploy an app" dengan sesuai
-7. Streamlit akan build dependencies sesuai dengan requirements.txt dan app.py, dan jika berhasil akan memberikan link deployment
+File requirements.txt:
+```txt
+joblib==1.4.2
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.6.0
+streamlit==1.41.1
+```
 
-Link: https://data-scientist-2-bjrkcolvbj9ykwuqghyce8.streamlit.app/
+2. Akses Streamlit Community Cloud
+- Buka Streamlit Community Cloud
+- Login menggunakan akun github
 
+3. Membuat Aplikasi Baru
+- Klik tombol "Create App" di dashboard Streamlit.
+- Isi data pada formulir "Deploy an app" dengan repository GitHub yang telah dibuat.
 
+4. Proses Deployment
+- Streamlit akan secara otomatis membangun aplikasi menggunakan dependensi yang terdapat dalam file requirements.txt dan menjalankan file app.py. Jika proses ini berhasil, Anda akan mendapatkan tautan untuk mengakses aplikasi.
+
+5. Aplikasi yang Telah Terdeploy
+
+- Aplikasi dapat diakses melalui link ini: [Aplikasi Streamlit](https://data-scientist-2-bjrkcolvbj9ykwuqghyce8.streamlit.app/)
+
+- Raw link: https://data-scientist-2-bjrkcolvbj9ykwuqghyce8.streamlit.app/
 
 
 ## Conclusion
