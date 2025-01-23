@@ -306,6 +306,16 @@ streamlit==1.41.1
 - Raw link: https://data-scientist-2-bjrkcolvbj9ykwuqghyce8.streamlit.app/
 
 
+- Prediksi data siswa yang graduated
+
+![Screenshot 2025-01-22 234019](https://github.com/user-attachments/assets/4baf8305-7c07-4b4a-ac13-2c9f84da5693)
+
+
+- Prediksi data siswa yang dropout
+
+![Screenshot 2025-01-22 233336](https://github.com/user-attachments/assets/8b7c2983-b149-423c-bc79-584503c800e8)
+
+
 ## Conclusion
 Proyek ini bertujuan untuk membantu PT Jaya Jaya Institute mengidentifikasi faktor-faktor yang menyebabkan siswa melakukan dropout dan memberikan rekomendasi berbasis data untuk mengurangi angka tersebut. Berdasarkan analisis data pada dashboard:
 
