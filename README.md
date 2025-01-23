@@ -180,9 +180,9 @@ Dari **business dashboard** yang telah dibuat di atas, berikut adalah penjelasan
 
 ### **6. Tuition Fees and Scholarship by Status**  
 - **Rata-rata Biaya Kuliah yang Terbayar:**  
-  - Dropout: **IDR 0.6 juta**.  
-  - Enrolled: **IDR 1.0 juta**.  
-  - Graduate: **IDR 1.5 juta**.  
+  - Dropout: **< 0.7**.  
+  - Enrolled: **0.9**.  
+  - Graduate: **> 0.9**.  
   - Siswa yang lulus cenderung lebih disiplin dalam membayar biaya kuliah dibandingkan yang dropout.  
 - **Rata-rata Beasiswa yang Dimiliki:**  
   - Dropout: **19.4% memiliki beasiswa**.  
@@ -295,15 +295,15 @@ streamlit==1.41.1
 ## Conclusion
 Proyek ini bertujuan untuk membantu PT Jaya Jaya Institute mengidentifikasi faktor-faktor yang menyebabkan siswa melakukan dropout dan memberikan rekomendasi berbasis data untuk mengurangi angka tersebut. Berdasarkan analisis data pada dashboard:
 
-Angka Dropout Tinggi (23%)
+Angka Dropout Tinggi (lebih dari 30%)
 Hampir seperempat dari total siswa mengalami dropout, yang menjadi tantangan utama bagi institusi.
 
 Faktor-Faktor Risiko Dropout:
-Kinerja akademik yang rendah (rata-rata satuan kurikulum hanya 5.9 pada semester kedua).
-Pembayaran biaya kuliah yang tertunda (hanya 0.6 juta dibandingkan 1.5 juta pada siswa yang lulus).
-Persentase siswa yang memiliki utang lebih tinggi pada kelompok dropout (25%).
-Kurangnya dukungan beasiswa pada siswa dropout (19.4% memiliki beasiswa dibandingkan dengan 61.8% pada siswa lulus).
-Siswa yang lebih tua saat mendaftar lebih rentan terhadap dropout (22.37 tahun rata-rata usia pendaftaran dibandingkan 21.78 tahun pada siswa lulus).
+- Kinerja akademik yang rendah (rata-rata satuan kurikulum hanya 5.9 pada semester kedua).
+- Pembayaran biaya kuliah yang tertunda (hanya kurang dari 0.7 tuition fee dibandingkan lebih dari 0.9 tuition_fee pada siswa yang lulus).
+- Persentase siswa yang memiliki utang lebih tinggi pada kelompok dropout.
+- Kurangnya dukungan beasiswa pada siswa dropout (19.4% memiliki beasiswa dibandingkan dengan 61.8% pada siswa lulus).
+- Siswa yang lebih tua saat mendaftar lebih rentan terhadap dropout (22.37 tahun rata-rata usia pendaftaran dibandingkan 21.78 tahun pada siswa lulus).
 
 Kelebihan Institusi:
 Tingkat kelulusan yang tinggi (sekitar 43% dari total siswa berhasil lulus).
