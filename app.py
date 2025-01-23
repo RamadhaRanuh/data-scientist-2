@@ -4,14 +4,6 @@ import numpy as np
 import pandas as pd
 
 def predict(data):
-    """Making prediction
-
-    Args:
-        data (Pandas DataFrame): Dataframe that contain all the preprocessed data
-
-    Returns:
-        str: Prediction result (Good, Standard, or Poor)
-    """
     result = model.predict(data)
     prediction_mapping = {
         0: "Dropout",
