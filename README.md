@@ -129,6 +129,9 @@ Parameter:
 
 ## Business Dashboard
 
+![I Gusti Bagus Ramadha Saverian Ranuh-dashboard](https://github.com/user-attachments/assets/52565332-56ec-47f6-a4ba-0feb7e2f34c4)
+
+
 Dari **business dashboard** yang telah dibuat di atas, berikut adalah penjelasan rinci dan detail berdasarkan setiap visualisasi yang tersedia:
 
 ---
@@ -276,11 +279,22 @@ streamlit==1.41.1
 
 2. Akses Streamlit Community Cloud
 - Buka Streamlit Community Cloud
+
+![Screenshot 2025-01-23 153751](https://github.com/user-attachments/assets/8812140a-4c19-4daf-b028-7fb7be9db173)
+
+
 - Login menggunakan akun github
+
 
 3. Membuat Aplikasi Baru
 - Klik tombol "Create App" di dashboard Streamlit.
+
+![Screenshot 2025-01-23 153758](https://github.com/user-attachments/assets/d07a70e7-8648-4b02-84d3-aca80ed7566d)
+
+
 - Isi data pada formulir "Deploy an app" dengan repository GitHub yang telah dibuat.
+
+  ![Screenshot 2025-01-23 153850](https://github.com/user-attachments/assets/261f3abb-0389-4e1b-ae75-23cbd0f88821)
 
 4. Proses Deployment
 - Streamlit akan secara otomatis membangun aplikasi menggunakan dependensi yang terdapat dalam file requirements.txt dan menjalankan file app.py. Jika proses ini berhasil, Anda akan mendapatkan tautan untuk mengakses aplikasi.
